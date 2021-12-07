@@ -1,0 +1,12 @@
+{% extends 'helpers/base.html' %}
+
+{% block content %}
+
+    <h1>Message board homepage</h1>
+    <ul class="ui list">
+        {% for post in all_posts_list %}
+            <li class="item">{{ post.text }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
